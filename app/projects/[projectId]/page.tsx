@@ -1,14 +1,18 @@
 import ProjectPage from "@/components/ProjectPage";
 import { getProjectById } from "@/lib/projects";
-
-// export const dynamic = "force-dynamic"; // utile si le JSON change souvent
+import { notFound } from "next/navigation";
 
 export default async function ProjectDetailPage({
   params,
 }: {
   params: { projectId: string };
 }) {
-  const project = await getProjectById(params.projectId);
+  const { projectId } = await params;
+  const project = await getProjectById(projectId);
+
+  if (!project) {
+    notFound();
+  }
 
   return <ProjectPage project={project} />;
 }

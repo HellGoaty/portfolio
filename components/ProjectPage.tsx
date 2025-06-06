@@ -1,11 +1,13 @@
 "use client";
+
 import Header from "./Header";
 import ScrollBackgroundColor from "./ScrollBgChange";
 import TechnoIcons from "./TechnoIcons";
 import VideoComponent from "./VideoComponent";
+import { Project } from "@/types";
 // import { BsChevronDoubleDown } from "react-icons/bs";
 
-const ProjectPage = ({ project }) => {
+export default function ProjectPage({ project }: { project: Project }) {
   if (!project) {
     return <div className="text-center text-2xl mt-20">No project found</div>;
   }
@@ -18,16 +20,11 @@ const ProjectPage = ({ project }) => {
         <h1 className="text-6xl font-semibold text-center mt-10 mb-16 uppercase tracking-wider">
           {project.title}
         </h1>
-        <p
-          className={`
-
-            p-10 rounded-md mx-auto mt-24 max-w-[700px] text-center
-            drop-shadow-[0_10px_5px_rgba(105,68,0,0.16)]
-          `}
-        >
+        <p className="p-10 rounded-md mx-auto mt-24 max-w-[700px] text-center drop-shadow-[0_10px_5px_rgba(105,68,0,0.16)]">
           {project.description}
         </p>
         <VideoComponent projectId={project.id} />
+
         {/* <span className="flex justify-center text-4xl mt-5">
           <BsChevronDoubleDown />
         </span> */}
@@ -41,6 +38,4 @@ const ProjectPage = ({ project }) => {
       </div>
     </div>
   );
-};
-
-export default ProjectPage;
+}
