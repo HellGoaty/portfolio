@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  transition: color 20ms ease-in-out, background-color 200ms ease-in-out;
+  background: #fff6ec;
+}
+
+h2,
+h1,
+p,
+span,
+li,
+button {
+  transition: all ease-in-out 200ms;
+}
+
+div {
+  transition: border-color ease-in-out 200ms;
+}

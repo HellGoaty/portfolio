@@ -1,0 +1,60 @@
+{
+  "projects": [
+    {
+      "id": "1",
+      "title": "École de musique de Cognin",
+      "description": "Ce site web a été réalisé lors de ma seconde année en MMI. Le projet consistait à accompagner l'école de musique de Cognin pour une refonte de leur site et de leur charte graphique. Accompagné de graphistes et de créateurs de contenus multimédias, nous avons développé un Wordpress totalement administrable par le client.",
+      "screenshots": ["screenshot1.png", "screenshot2.png"],
+      "technos": ["Wordpress", "Php", "Html5", "Sass"]
+    },
+    {
+      "id": "2",
+      "title": "La Montagne",
+      "description": "Ceci est une maquette d'une intégration que j'ai réalisé pour me former en développement front-end. Elle a été réalisé uniquement en HTML en SCSS",
+      "screenshots": ["screenshot1.png", "screenshot2.png"],
+      "technos": ["Html5", "Sass"]
+    },
+    {
+      "id": "3",
+      "title": "Le Resto",
+      "description": "Le Resto est un projet que j'ai développé en partant d'une maquette déjà fourni. J'ai utilisé HTML et SCSS pour la réaliser et c'est un projet que j'ai réalisé en parallèle de mes études",
+      "screenshots": ["screenshot1.png", "screenshot2.png"],
+      "technos": ["Html5", "Sass"]
+    },
+    {
+      "id": "4",
+      "title": "Trombi Selector",
+      "description": "J'ai développé cette petite application web lors de mon stage de deuxième année. C'est mon premier projet utilisant React et j'ai également appris gâce à ça les API rest pour intéragir avec une base de données MongoDB",
+      "screenshots": ["screenshot1.png", "screenshot2.png"],
+      "technos": ["React", "NodeJs"]
+    },
+    {
+      "id": "5",
+      "title": "Le Business Camp",
+      "description": "Lors de mon stage en deuxième année, j'ai co-développé ce site qui gère un planning d'évenèment. C'est un projet wordpress administrable grâce au plugin ACF. Cela m'a donc permis d'approfondir le PHP pour récupérer toutes les données des conférences et de les afficher en temps réel",
+      "screenshots": ["screenshot1.png", "screenshot2.png"],
+      "technos": ["Wordpress", "Php", "Html5", "Css3Alt", "Js"]
+    },
+    {
+      "id": "6",
+      "title": "City Game Vienne",
+      "description": "J'ai développé ce jeu web pendant mon année d'alternance. Je suis parti du fonctionnement des autres jeux de l'entreprise ainsi que leur style global pour me l'approprier et imaginer un scénario et des énigmes.",
+      "screenshots": ["screenshot1.png", "screenshot2.png"],
+      "technos": ["Js", "Php", "Html5", "Css3Alt"]
+    },
+    {
+      "id": "7",
+      "title": "CPEA",
+      "description": "Durant mon stage de seconde année, j'ai participé à la refonte du site du CPEA de Chambéry. Ce projet sous wordpress est du no-code grâce au plugin elementor",
+      "screenshots": ["screenshot1.png", "screenshot2.png"],
+      "technos": ["Wordpress", "Elementor"]
+    },
+    {
+      "id": "8",
+      "title": "Calendrier de l'Avent",
+      "description": "J'ai développé ce calendirer de l'Avent pendant mon alternance pour notre stratégie de communication. Ce projet m'a permis d'approfondir le développemet back-end en lien avec la base de données.",
+      "screenshots": ["screenshot1.png", "screenshot2.png"],
+      "technos": ["Php", "Html5", "Css3Alt", "Database"]
+    }
+  ]
+}
