@@ -12,12 +12,12 @@ export default function page() {
       <div className="relative z-10 flex gap-10 bg-white p-7 max-w-[60%] items-center mx-auto rounded-md text-justify text-black dark:text-primary">
         <p className="text-justify">
           Je suis Etienne Gagniere, 21 ans et je sors de trois années de BUT
-          Métiers du Multimédia et de l&apos;Internet à l'IUT de Chambéry. J'ai
-          travaillé 1 an et demi avec un escape game en developpeur front-end et
-          j'ai fait un stage de 3 mois chez Evolutive Group. Je continue à me
-          former en parallèle et m&apos;intéresse aux dernières technologies. En
-          dehors de ça, je suis passionné de musique ainsi que de cinéma et
-          d&apos;expériences vidéoludiques.
+          Métiers du Multimédia et de l&apos;Internet à l&apos;IUT de Chambéry.
+          J&apos;ai travaillé 1 an et demi avec un escape game en developpeur
+          front-end et j&apos;ai fait un stage de 3 mois chez Evolutive Group.
+          Je continue à me former en parallèle et m&apos;intéresse aux dernières
+          technologies. En dehors de ça, je suis passionné de musique ainsi que
+          de cinéma et d&apos;expériences vidéoludiques.
         </p>
         <Image
           src="/photo.png"
