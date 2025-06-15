@@ -1,6 +1,5 @@
 "use client";
 
-import Header from "./Header";
 import ScrollBackgroundColor from "./ScrollBgChange";
 import TechnoIcons from "./TechnoIcons";
 import VideoComponent from "./VideoComponent";
@@ -14,7 +13,6 @@ export default function ProjectPage({ project }: { project: Project }) {
 
   return (
     <div id="project-container" className="relative z-0 ">
-      <Header />
       <ScrollBackgroundColor />
       <div className="container mx-auto p-4">
         <h1 className="text-6xl font-semibold text-center mt-10 mb-16 uppercase tracking-wider">

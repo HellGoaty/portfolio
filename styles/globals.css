@@ -7,6 +7,13 @@
 body {
   transition: color 20ms ease-in-out, background-color 200ms ease-in-out;
   background: #fff6ec;
+  color: #0b1120;
+}
+
+:root {
+  color-scheme: light;
+  color: #fff6ec;
+  background: #0b1120;
 }
 
 h2,
@@ -20,4 +27,12 @@ button {
 
 div {
   transition: border-color ease-in-out 200ms;
+}
+
+.clip-circle {
+  clip-path: circle(50% at 50% 50%);
+}
+
+.clip-triangle {
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 }

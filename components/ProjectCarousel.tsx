@@ -45,7 +45,7 @@ export default function ProjectCarousel({ projects }: { projects: Project[] }) {
             <div
               className="min-w-0 px-2"
               style={{
-                flex: "0 0 30%", // 1 slide par vue
+                flex: "0 0 30%",
                 height: "300px",
               }}
               key={project.id}
@@ -62,7 +62,7 @@ export default function ProjectCarousel({ projects }: { projects: Project[] }) {
                     className="object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
-                <h3 className="text-center mt-2 text-xl font-semibold text-gray-800">
+                <h3 className="text-center mt-2 text-xl font-semibold text-[#fff6ec]">
                   {project.title}
                 </h3>
               </Link>
@@ -74,16 +74,16 @@ export default function ProjectCarousel({ projects }: { projects: Project[] }) {
       {/* Prev / Next buttons */}
       <button
         onClick={scrollPrev}
-        className="absolute top-1/2 -left-10 transform -translate-y-1/2 bg-white rounded-full p-2 shadow-md z-10 hover:scale-110 transition cursor-pointer"
+        className="absolute top-1/2 -left-10 transform -translate-y-1/2 bg-[#fff6ec] text-primary rounded-full p-2 shadow-md z-10 hover:scale-110 transition cursor-pointer"
       >
-        <BsChevronLeft size={24} />
+        <BsChevronLeft size={24} color="#0b1120" />
       </button>
 
       <button
         onClick={scrollNext}
-        className="absolute top-1/2 -right-10 transform -translate-y-1/2 bg-white rounded-full p-2 shadow-md z-10 hover:scale-110 transition cursor-pointer"
+        className="absolute top-1/2 -right-10 transform -translate-y-1/2 bg-[#fff6ec] rounded-full p-2 shadow-md z-10 hover:scale-110 transition cursor-pointer"
       >
-        <BsChevronRight size={24} />
+        <BsChevronRight size={24} color="#0b1120" />
       </button>
 
       {/* Dots */}

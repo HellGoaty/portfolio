@@ -1,8 +1,6 @@
-import CustomCursor from "@/components/CustomCursor";
 import GrainEffect from "@/components/GrainEffect";
 import Header from "@/components/Header";
 import Image from "next/image";
-import React from "react";
 
 export default function page() {
   return (
@@ -28,7 +26,6 @@ export default function page() {
         />
       </div>
 
-      <CustomCursor />
       <GrainEffect elementId="about-container" />
     </div>
   );
