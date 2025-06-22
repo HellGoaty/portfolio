@@ -1,23 +1,17 @@
 "use client";
 import { useEffect } from "react";
 import { useScroll, useTransform } from "framer-motion";
-import { useTheme } from "../context/ThemeContext";
 
 const ScrollBackgroundColor = () => {
   const { scrollY } = useScroll();
-  const { isDarkMode } = useTheme();
 
   const backgroundColor = useTransform(
     scrollY,
     [200, 300],
-    isDarkMode ? ["#0b1120", "#fff6ec"] : ["#fff6ec", "#0b1120"]
+    ["#0b1120", "#fff6ec"]
   );
 
-  const textColor = useTransform(
-    scrollY,
-    [200, 300],
-    isDarkMode ? ["#fff", "#1a1a1a"] : ["#1a1a1a", "#fff"]
-  );
+  const textColor = useTransform(scrollY, [200, 300], ["#fff", "#1a1a1a"]);
 
   useEffect(() => {
     const updateBackgroundColor = (latest) => {
@@ -30,7 +24,7 @@ const ScrollBackgroundColor = () => {
       unsubscribe();
       document.body.style.backgroundColor = "";
     };
-  }, [backgroundColor, isDarkMode]);
+  }, [backgroundColor]);
 
   useEffect(() => {
     const updateTextColor = (latest) => {
@@ -43,7 +37,7 @@ const ScrollBackgroundColor = () => {
       unsubscribe();
       document.body.style.color = "";
     };
-  }, [textColor, isDarkMode]);
+  }, [textColor]);
 
   return null;
 };
