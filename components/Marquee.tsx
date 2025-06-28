@@ -24,16 +24,24 @@ export default function MarqueeContact() {
         pauseOnHover={true}
         loop={0} // infini
       >
-        <span className="text-4xl font-semibold mx-6">
+        <span className="text-2xl sm:text-4xl font-semibold mx-6">
           Travaillons Ensemble
         </span>
-        <span className="text-4xl font-semibold mx-6">Work Together</span>
-        <span className="text-4xl font-semibold mx-6">Open to Work</span>
-        <span className="text-4xl font-semibold mx-6">
+        <span className="text-2xl sm:text-4xl font-semibold mx-6">
+          Work Together
+        </span>
+        <span className="text-2xl sm:text-4xl font-semibold mx-6">
+          Open to Work
+        </span>
+        <span className="text-2xl sm:text-4xl font-semibold mx-6">
           Travaillons Ensemble
         </span>
-        <span className="text-4xl font-semibold mx-6">Work Together</span>
-        <span className="text-4xl font-semibold mx-6">Open to Work</span>
+        <span className="text-2xl sm:text-4xl font-semibold mx-6">
+          Work Together
+        </span>
+        <span className="text-2xl sm:text-4xl font-semibold mx-6">
+          Open to Work
+        </span>
       </Marquee>
     </motion.div>
   );

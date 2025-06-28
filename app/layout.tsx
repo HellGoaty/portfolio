@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Etienne Gagniere",
-  description: "Etienne Gagniere's Portfolio, front-end developper",
+  title: "Etienne Gagniere - Porfolio",
+  description: "Portfolio d'Etienne Gagniere, developpeur front-end",
 };
 
 export default function RootLayout({
