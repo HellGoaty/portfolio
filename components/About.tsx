@@ -10,11 +10,11 @@ export default function About() {
 
   return (
     <div
-      id="about-container"
+      id="about"
       ref={ref}
       className="min-h-screen flex flex-col items-center justify-center bg-[#0b1120] px-4 py-20 z-10 relative"
     >
-      <div className="relative flex flex-col sm:flex-col-reverse md:flex-row items-center -space-x-5 -space-y-5 max-w-5xl w-full justify-center">
+      <div className="relative flex flex-col sm:flex-col-reverse md:flex-row items-center sm:-space-x-5 -space-y-5 max-w-5xl w-full justify-center">
         {/* TEXTE */}
         <motion.div
           initial={{ opacity: 0, x: 0 }}
@@ -25,7 +25,7 @@ export default function About() {
             ease: "easeOut",
             delay: 0.2,
           }}
-          className="bg-[#fff6ec] text-[#0b1120] p-6 rounded-md shadow-md w-full md:max-w-md flex flex-col justify-center gap-4 md:items-start md:text-left items-center text-center relative z-100"
+          className="bg-[#fff6ec] text-[#0b1120] p-6 rounded-md shadow-md w-full md:max-w-md flex flex-col justify-center  md:items-start md:text-left items-center text-center relative z-100"
         >
           <h2 className="text-2xl font-bold uppercase tracking-wider">
             À propos de moi
@@ -56,7 +56,7 @@ export default function About() {
             alt="Ma photo"
             width={350}
             height={400}
-            className="object-cover rounded-2xl shadow-lg"
+            className="object-cover rounded-2xl shadow-lg max-w-[90%] mx-auto"
           />
         </motion.div>
       </div>

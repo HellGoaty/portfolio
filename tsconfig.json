@@ -27,9 +27,9 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "components/VideoComponent.jsx",
-    "components/TechnoIcons.jsx",
-    "components/ScrollBgChange.jsx"
+    "components/VideoComponent.tsx",
+    "components/TechnoIcons.tsx",
+    "components/ScrollBgChange.tsx"
   ],
   "exclude": ["node_modules"]
 }

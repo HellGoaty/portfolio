@@ -56,7 +56,7 @@ export default function BubbleReveal({
               transition={{ duration: 0.7, ease: "easeOut" }}
             >
               <motion.h1
-                className="text-white text-4xl font-bold uppercase tracking-widest"
+                className="text-white text-3xl sm:text-4xl font-bold uppercase tracking-widest"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.7, ease: "easeOut" }}
@@ -65,7 +65,7 @@ export default function BubbleReveal({
               </motion.h1>
 
               <motion.h2
-                className="text-white text-3xl font-bold tracking-widest"
+                className="text-white text-2xl sm:text-3xl font-bold tracking-widest"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 1, duration: 0.7, ease: "easeOut" }}

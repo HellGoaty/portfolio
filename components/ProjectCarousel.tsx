@@ -19,7 +19,7 @@ export default function ProjectCarousel({ projects }: { projects: Project[] }) {
 
   return (
     <div className="relative">
-      <div className="relative mt-10 sm:max-w-[90%] max-w-[80%] mx-auto">
+      <div className="relative mt-10 sm:max-w-[90%] max-w-[75%] mx-auto min-w-[200px]">
         {/* Carousel */}
         <div className="overflow-hidden" ref={emblaRef}>
           <div className="flex">
@@ -29,7 +29,7 @@ export default function ProjectCarousel({ projects }: { projects: Project[] }) {
                 key={project.id}
               >
                 <Link
-                  href={`/projects/${project.id}`}
+                  href={`/projets/${project.id}`}
                   className="block group h-full"
                 >
                   <div className="relative w-full h-[300px] overflow-hidden rounded-lg shadow-md">

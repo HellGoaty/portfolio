@@ -11,7 +11,7 @@ const ProjectsSliderPage = () => {
   useEffect(() => {
     async function fetchProjects() {
       try {
-        const res = await fetch("/api/projects");
+        const res = await fetch("/api/projets");
         const data = await res.json();
         setProjects(data);
       } catch (err) {

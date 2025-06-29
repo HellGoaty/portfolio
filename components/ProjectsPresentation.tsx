@@ -10,7 +10,7 @@ export default function ProjectsPresentation() {
   useEffect(() => {
     async function fetchProjects() {
       try {
-        const res = await fetch("/api/projects");
+        const res = await fetch("/api/projets");
         const data = await res.json();
         setProjects(data);
       } catch (err) {
@@ -21,17 +21,14 @@ export default function ProjectsPresentation() {
   }, []);
 
   return (
-    <div
-      id="projects-container"
-      className="relative z-10 bg-[#0b1120] text-[#fff6ec]"
-    >
+    <div id="projects" className="relative z-10 bg-[#0b1120] text-[#fff6ec]">
       <motion.div
         initial={{ opacity: 0, y: 10 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.3 }}
         transition={{ duration: 0.5, ease: "easeOut", delay: 0.3 }}
       >
-        <h2 className="text-center text-6xl pt-20 mb-16 font-bold uppercase tracking-wide relative z-10">
+        <h2 className="text-center text-4xl sm:text-6xl pt-20 mb-16 font-bold uppercase tracking-wide relative z-10">
           Mes projets
         </h2>
       </motion.div>

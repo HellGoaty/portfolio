@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   transition: color 20ms ease-in-out, background-color 200ms ease-in-out;
   background: #fff6ec;

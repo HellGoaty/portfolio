@@ -1,23 +1,24 @@
 import path from "path";
-import { promises as fs } from "fs";
-import { Project } from "@/types";
+import fs from "fs/promises";
+import type { Project } from "@/types";
 
-export async function getAllProjects(): Promise<Project[]> {
-  const filePath = path.join(process.cwd(), "data/projects.json");
-
+export async function getAllProjects() {
   try {
+    const filePath = path.join(process.cwd(), "data", "projets.json");
     const fileContents = await fs.readFile(filePath, "utf8");
     const data = JSON.parse(fileContents);
-    if (!Array.isArray(data.projects)) throw new Error("Invalid data format");
 
-    return data.projects as Project[];
+    if (!Array.isArray(data)) throw new Error("Invalid data format");
+
+    return data;
   } catch (error) {
-    console.error("Error reading projects.json:", error);
+    console.error("Error reading projets.json:", error);
     return [];
   }
 }
 
-export async function getProjectById(id: string): Promise<Project | undefined> {
+export async function getProjectById(id: string): Promise<Project | null> {
   const projects = await getAllProjects();
-  return projects.find((project) => project.id === id);
+  const project = projects.find((p) => p.id === id);
+  return project || null;
 }

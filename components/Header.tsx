@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import BubbleReveal from "@/components/BubbleReveal";
-import Link from "next/link";
 import GrainEffect from "@/components/GrainEffect";
 import { motion } from "framer-motion";
 import CustomCursor from "@/components/CustomCursor";
@@ -31,13 +30,13 @@ export default function Header() {
             <nav className="flex justify-end sm:justify-normal items-end sm:items-start">
               <ul className=" flex flex-col gap-10 sm:text-7xl text-3xl font-medium uppercase tracking-wide text-right">
                 <li className="transition-transform duration-200 cursor-pointer hover:-translate-x-2.5">
-                  <Link href="/projects">Projets</Link>
+                  <a href="#projects">Projets</a>
                 </li>
                 <li className="transition-transform duration-200 cursor-pointer hover:-translate-x-2.5">
-                  <Link href="/about">A propos</Link>
+                  <a href="#about">A propos</a>
                 </li>
                 <li className="transition-transform duration-200 cursor-pointer hover:-translate-x-2.5">
-                  <Link href="/contact">Contact</Link>
+                  <a href="#contact">Contact</a>
                 </li>
               </ul>
             </nav>
