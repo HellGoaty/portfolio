@@ -8,10 +8,10 @@
   },
   {
     "id": "2",
-    "title": "La Montagne",
-    "description": "Ceci est une maquette d'une intégration que j'ai réalisé pour me former en développement front-end. Elle a été réalisé uniquement en HTML en SCSS",
-    "screenshots": ["screenshot1.png", "screenshot2.png"],
-    "technos": ["Html5", "Sass"]
+    "title": "Agenda Personnalisé",
+    "description": "Cet agenda est pour moi un projet regroupant un maximum des nouvelles technologies que je connais. L'idéee venait d'un besoin que j'avais de pouvoir utilsier un agenda compltement personnalisable ne trouvant pas bon bonheur du côté de ceux qui existent tout en pouvant faire des choses uniques comme des appels d'API pour récupérer les informations de match de football et en créer des évenements pour ne rien rater.",
+    "screenshots": ["screenshot1.png"],
+    "technos": ["React", "Tailwind", "Typescript"]
   },
   {
     "id": "3",
